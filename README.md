@@ -9,9 +9,9 @@ Implementation of a Gazebo plugin using ROS and KDL libraries that allow to deci
 - copy the content of the repository in your ROS src folder
 
 - $ ~/your_ros_ws catkin_make
-  $ roslaunch lbr_iiwa_description gazebo_ctrl.launch
-  click start simulation button on gazebo
-  wait that the ROS_INFO message appear on the linux bash: "Ready to control!"
+-  $ roslaunch lbr_iiwa_description gazebo_ctrl.launch
+-  click start simulation button on gazebo
+-  wait that the ROS_INFO message appear on the linux bash: "Ready to control!"
   
 - open another bash shell to send topic message that plugin will read to know your desired end-effector position,
   you have two option to specify the position:
