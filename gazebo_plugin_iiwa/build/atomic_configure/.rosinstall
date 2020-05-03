@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/alessandro/ros_ws/src/gazebo_plugin_iiwa/build/devel/setup.sh
