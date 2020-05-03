@@ -10,6 +10,8 @@ Implementation of a Gazebo plugin using ROS and KDL libraries that allow to deci
 
 - $ ~/your_ros_ws catkin_make
   $ roslaunch lbr_iiwa_description gazebo_ctrl.launch
+  click start simulation button on gazebo
+  wait that the ROS_INFO message appear on the linux bash: "Ready to control!"
   
 - open another bash shell to send topic message that plugin will read to know your desired end-effector position,
   you have two option to specify the position:
@@ -25,3 +27,5 @@ Implementation of a Gazebo plugin using ROS and KDL libraries that allow to deci
      For example:
   	
   	$rostopic pub -1 /gazebo_plugin/des_position_relative geometry_msgs/Point -- '-0.5' '0.2' '0.1'
+  	
+- after publishing the message the robot will start to move to reach the desired position
